@@ -36,4 +36,4 @@ http.createServer((req, res) => {
 
   res.writeHead(code, { 'Content-Type': 'text/json' });
   res.end(JSON.stringify(resData));
-}).listen(1234);
+}).listen(process.env.PORT || 1234);
